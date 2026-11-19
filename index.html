@@ -88,6 +88,85 @@
   }
   .btn-eye:hover{border-color:var(--navy);color:var(--navy)}
   .btn-eye svg{width:17px;height:17px;fill:currentColor}
+  .btn-eye.active{border-color:var(--blue);color:var(--blue);background:#eef4fb}
+
+  /* ===== Контакты ===== */
+  .contacts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .contact-tile{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;display:flex;flex-direction:column;align-items:flex-start;
+  }
+  .contact-tile:hover{border-color:var(--navy-2);box-shadow:var(--shadow)}
+  .contact-tile-ico{
+    width:44px;height:44px;border-radius:8px;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  }
+  .contact-tile-ico svg{width:20px;height:20px;fill:currentColor}
+  .contact-tile h3{font-size:1rem;color:var(--ink);font-weight:700;margin-bottom:8px}
+  .contact-tile p{color:var(--muted);font-size:.9rem;line-height:1.6}
+  .contact-tile a{color:var(--blue);text-decoration:none;font-weight:600}
+  .contact-tile a:hover{color:var(--blue-2)}
+  .social-links{display:flex;gap:14px;flex-wrap:wrap}
+  .social-link{
+    display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border-radius:8px;
+    border:1px solid var(--line);color:var(--ink);font-weight:600;background:#fff;transition:.15s;
+  }
+  .social-link:hover{border-color:var(--navy);color:var(--navy)}
+  .social-link svg{width:19px;height:19px;fill:currentColor}
+  body.vision .contact-tile{background:#14181d;color:#f2f4f6;border:1px solid #4a545e}
+  body.vision .contact-tile h3{color:#fff}
+  body.vision .contact-tile-ico{background:#ffd54a;color:#000}
+  body.vision .social-link{background:#14181d;border-color:#4a545e;color:#fff}
+  body.vision .social-link:hover{border-color:#ffd54a;color:#ffd54a}
+
+  /* ===== Версия для слабовидящих (тёмная, высококонтрастная) ===== */
+  body.vision{
+    font-size:18px;line-height:1.8;
+    background:#0d0f12;color:#f2f4f6;
+    --bg:#0d0f12;--card:#14181d;--white:#14181d;
+    --navy:#05070a;--navy-2:#1a2129;--blue:#ffd54a;--blue-2:#ffd54a;
+    --ink:#ffffff;--text:#f2f4f6;--muted:#d8dee5;
+    --line:#4a545e;--shadow:none;--shadow-lg:none;
+  }
+  body.vision .wrap{max-width:1240px}
+  body.vision .topbar{background:#000;color:#fff;border-bottom:1px solid #4a545e}
+  body.vision a{color:#ffd54a;text-decoration:underline}
+  body.vision a:hover{color:#fff}
+  body.vision .btn-eye{border-color:#ffd54a;color:#ffd54a;background:#14181d}
+  body.vision .btn-eye.active{border-color:#ffd54a;color:#000;background:#ffd54a}
+  body.vision .site-header{position:static;box-shadow:none;background:#05070a;border-bottom:2px solid #4a545e}
+  body.vision .nav-bar{background:#05070a}
+  body.vision .nav-bar a{color:#fff}
+  body.vision .nav-bar a:hover{background:rgba(255,255,255,.15);color:#fff}
+  body.vision .nav-login-btn,body.vision .nav-search{color:#fff}
+  body.vision section{background:#0d0f12!important}
+  body.vision .news-card,body.vision .news-item,body.vision .featured-news,body.vision .news-full,
+  body.vision .notice-tile,body.vision .page-view,body.vision .section-tile,body.vision .info-card,
+  body.vision .abitur-card,body.vision .student-card,body.vision .section-card,
+  body.vision .feature,body.vision .lcard,body.vision .partner,body.vision .modal-box,
+  body.vision .hero-card,body.vision .course-card,body.vision .feed-card,body.vision .dif-tile{
+    background:#14181d!important;color:#f2f4f6!important;
+    box-shadow:none!important;border:1px solid #4a545e}
+  body.vision .section-card:hover,body.vision .feature:hover,body.vision .lcard:hover,
+  body.vision .partner:hover{border-color:#ffd54a!important;box-shadow:none!important}
+  body.vision .section-card .sc-ico,body.vision .feature .feat-ico,body.vision .lcard .ico,
+  body.vision .partner .p-ico,body.vision .contact-item .ico,body.vision .hero-card .card-head .badge{
+    background:#232a31!important;color:#ffd54a!important;border-color:#4a545e!important}
+  body.vision .section-card .sc-ico svg,body.vision .feature .feat-ico svg,body.vision .lcard .ico svg,
+  body.vision .partner .p-ico svg{fill:#ffd54a}
+  body.vision .sc-arrow,body.vision .feature .btn-text,body.vision .lcard .btn-text{color:#ffd54a}
+  body.vision h1,body.vision h2,body.vision h3,body.vision h4{color:#fff}
+  body.vision p,body.vision li,body.vision .val,body.vision .lbl,body.vision .ni-body p{color:#f2f4f6}
+  body.vision .news-date,body.vision .fn-date,body.vision .news-media .news-date,
+  body.vision .ni-date{background:#ffd54a;color:#000;border-color:#ffd54a}
+  body.vision .btn,body.vision .btn-primary{background:#ffd54a;color:#000;border-color:#ffd54a}
+  body.vision .brand-logo{background:#ffd54a}
+  body.vision .contact-item .ico{color:#ffd54a}
+  body.vision .modal-box{background:#14181d;border:1px solid #4a545e}
+  body.vision input,body.vision textarea,body.vision select{background:#0d0f12;color:#fff;border-color:#4a545e}
+  body.vision .nav-breadcrumb,body.vision .breadcrumb{color:#fff}
+  body.vision .day-theme-filter,body.vision [class*="grayscale"]{filter:none!important}
+  body.vision img{filter:contrast(1.05)}
 
   /* ===== Nav ===== */
   .nav-bar{background:var(--navy);}
@@ -169,7 +248,7 @@
   .news-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
   .news-card{
     background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-    overflow:hidden;display:flex;flex-direction:column;
+    overflow:hidden;display:flex;flex-direction:column;cursor:pointer;
   }
   .news-card:hover{border-color:var(--navy-2);box-shadow:var(--shadow)}
   .news-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--navy-2);display:flex;align-items:center;justify-content:center}
@@ -380,6 +459,34 @@
   }
   .modal-close:hover{color:var(--ink)}
   .modal-body{padding:22px}
+  /* ===== Поиск ===== */
+  .search-input-wrap{position:relative;margin-bottom:14px}
+  .search-input-wrap .search-ico{
+    position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    width:18px;height:18px;fill:var(--muted);pointer-events:none;
+  }
+  .search-input-wrap input{
+    width:100%;padding:11px 13px 11px 40px;border:1px solid var(--line);border-radius:8px;
+    font-size:.95rem;font-family:inherit;color:var(--ink);transition:.15s;background:#fff;
+  }
+  .search-input-wrap input:focus{border-color:var(--blue);outline:none}
+  body.vision .search-input-wrap input{background:#0d0f12;color:#fff;border-color:#4a545e}
+  body.vision .search-ico{fill:#ffd54a}
+  .search-results{display:flex;flex-direction:column;gap:4px;max-height:52vh;overflow-y:auto}
+  .search-empty{color:var(--muted);font-size:.9rem;padding:10px 2px}
+  body.vision .search-empty{color:#fff}
+  .sr-item{
+    padding:10px 12px;border-radius:8px;cursor:pointer;transition:.12s;display:block;
+    border:1px solid transparent;
+  }
+  .sr-item:hover{background:var(--bg);border-color:var(--line)}
+  body.vision .sr-item:hover{background:#232a31;border-color:#4a545e}
+  .sr-item b{color:var(--blue)}
+  body.vision .sr-item b{color:#ffd54a}
+  .sr-item .sr-title{font-weight:700;color:var(--ink);font-size:.95rem}
+  body.vision .sr-item .sr-title{color:#fff}
+  .sr-item .sr-cat{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
+  body.vision .sr-item .sr-cat{color:#d8dee5}
   .form-group{margin-bottom:16px}
   .form-group label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px}
   .form-group input[type=text],.form-group input[type=email],.form-group input[type=password]{
@@ -447,7 +554,7 @@
   .news-list{display:flex;flex-direction:column;gap:18px}
   .news-item{
     display:flex;gap:18px;background:#fff;border:1px solid var(--line);border-radius:10px;
-    padding:18px;transition:.15s;align-items:flex-start;
+    padding:18px;transition:.15s;align-items:flex-start;cursor:pointer;
   }
   .news-item:hover{border-color:var(--navy);box-shadow:var(--shadow)}
   .ni-img{
@@ -461,9 +568,17 @@
   .ni-body h3 a{color:inherit}
   .ni-body h3 a:hover{color:var(--blue)}
   .ni-body p{color:var(--muted);font-size:.9rem}
+  .news-full{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;max-width:820px}
+  .news-full .nf-date{display:inline-block;font-size:.78rem;color:var(--muted);font-weight:600;background:var(--bg);padding:4px 10px;border-radius:5px;border:1px solid var(--line);margin-bottom:14px}
+  .news-full h1.nf-title{font-size:1.6rem;color:var(--ink);font-weight:800;line-height:1.3;margin-bottom:18px}
+  .news-full .nf-img-wrap{border-radius:10px;overflow:hidden;margin-bottom:20px}
+  .news-full .nf-img-wrap img{width:100%;max-height:420px;object-fit:cover}
+  .news-full .nf-text{font-size:1rem;color:var(--text);line-height:1.75;white-space:pre-wrap}
   @media(max-width:700px){
     .sections-grid{grid-template-columns:1fr}
     .page-hero h1{font-size:1.5rem}
+    .news-full{padding:18px}
+    .news-full h1.nf-title{font-size:1.3rem}
     .news-item{flex-direction:column}
     .ni-img{flex:0 0 auto;width:100%;height:120px}
   }
@@ -522,30 +637,20 @@
 
   <div class="nav-bar" id="navBar">
     <div class="wrap nav">
-      <a class="nav-link active" href="https://ит-колледж.рф/it/index.php">Главная</a>
+      <a class="nav-link active" href="#" id="navHome">Главная</a>
       <a class="nav-link" href="#" id="navSections">Разделы сайта</a>
       <a class="nav-link" href="#" id="navNews">Новости</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&full=1">Абитуриентам</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&full=1">Студентам</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/pg.php?rub=1643203650&full=1">Центр карьеры</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/pg.php?rub=1643203662">Партнерам</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/page.php?rub=1111111111&pag=1744965647.sse">Общество «Знание»</a>
-      <a class="nav-link" href="https://ит-колледж.рф/it/contact.php">Контакты</a>
+      <a class="nav-link" href="#" id="navAbitur">Абитуриентам</a>
+      <a class="nav-link" href="#" id="navStudent">Студентам</a>
+      <a class="nav-link" href="#" id="navGraduate">Выпускникам</a>
+      <a class="nav-link" href="#" id="navPartners">Партнёрам</a>
+      <a class="nav-link" href="#" id="navContacts">Контакты</a>
       <span class="nav-spacer"></span>
-      <div class="nav-auth" id="authBox">
-        <!-- Показано когда не вошли -->
-        <button class="nav-login-btn" id="loginBtn">
-          <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/></svg>
-          Вход
-        </button>
-        <!-- Станет видимым после входа -->
-        <div class="nav-user" id="userMenu" style="display:none">
-          <img class="nav-avatar" id="navAvatar" alt="Аватар" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c7d2de'><path d='M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z'/></svg>"/>
-          <span id="navUserName">—</span>
-          <span class="caret">▾</span>
-        </div>
-      </div>
-      <a class="nav-search" href="https://ит-колледж.рф/it/find.php">
+      <button class="nav-login-btn" id="adminBtn" title="Вход в админ-панель">
+        <svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm0 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+        Админ
+      </button>
+      <a class="nav-search" href="#" id="navSearchBtn">
         <svg viewBox="0 0 24 24"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
         Поиск
       </a>
@@ -690,89 +795,384 @@
   <div class="wrap page-body">
     <div class="nav-breadcrumb"><a id="newsHome">Главная</a> / <span>Новости</span></div>
     <div class="news-list">
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=9643277453&start=0" aria-label="Молодость, карьера и IT"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2z"/></svg></a>
-        <div class="ni-body">
-          <span class="ni-date">Актуально</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=9643277453&start=0">Молодость, карьера и IT</a></h3>
-          <p>Образовательные площадки, конкурсы профессионального мастерства и кибербитвы позади — Пензенский…</p>
-        </div>
-      </article>
-
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794983762&start=0" aria-label="Создаём личный финансовый план"><svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3zm0 6 4.4 8H7.6L12 9z"/><circle cx="12" cy="16" r="1"/></svg></a>
+      <article class="news-item" data-newsid="9643277453">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/9643277453/1795019035.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
           <span class="ni-date">18.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794983762&start=0">Создаём личный финансовый план</a></h3>
-          <p>Финансовая грамотность — важный навык для взрослой жизни! Педагоги Пензенского…</p>
+          <h3>Молодость, карьера и IT</h3>
+          <p>Образовательные площадки, конкурсы профессионального мастерства и кибербитвы позади — колледж завершил профориентационный IT-марафон.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794983639&start=0" aria-label="Интерактивный практикум"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></a>
+      <article class="news-item" data-newsid="1795093658">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093658/1795093804.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">18.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794983639&start=0">Интерактивный практикум</a></h3>
-          <p>Специалисты МЦ «Юность» провели для студентов первого курса Пензенского ИТ-колледжа…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Эффективная коммуникация</h3>
+          <p>Центр карьеры провёл встречу обучающихся с ИТ-компанией ОНЛАНТА о работе IT-поддержки и коммуникации в команде.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794983325&start=0" aria-label="Атмосфера наставничества"><svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-1.7 0-5 .8-5 2.5V19h10v-3.5c0-1.7-3.3-2.5-5-2.5zm8 0c-.3 0-.6 0-1 .1 1.2.7 2 1.6 2 2.4V19h6v-3.5c0-1.7-3.3-2.5-6-2.5z"/></svg></a>
+      <article class="news-item" data-newsid="1795093425">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093425/1795093460.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">18.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794983325&start=0">Атмосфера наставничества</a></h3>
-          <p>Преподаватель Пензенского колледжа информационных и промышленных технологий Д.А. Ручкин вышел…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Мастерство полёта</h3>
+          <p>На базе колледжа прошёл квалификационный экзамен для команд проекта «Кибердром», в составе — наши студенты.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794982673&start=0" aria-label="Рассказываем о нас"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/></svg></a>
+      <article class="news-item" data-newsid="1795089576">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795089576/1795089582.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">18.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794982673&start=0">Рассказываем о нас</a></h3>
-          <p>Сотрудники Пензенского ИТ-колледжа продолжают активную профориентационную работу, рассказывая школьникам Сурского…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Здоровье — главный капитал</h3>
+          <p>В рамках операции «Чистое поколение-2026» студенты встретились с медицинским психологом наркологической больницы.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794981419&start=0" aria-label="Заслуженная благодарность"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 11-6-11-6zm0 2.3L18.5 9 12 12 5.5 9 12 5.3zM2 17l10 5 10-5-1.5-.8L12 20.4 3.5 16.2 2 17z"/></svg></a>
+      <article class="news-item" data-newsid="1795088503">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795088503/1795088512.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">18.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794981419&start=0">Заслуженная благодарность</a></h3>
-          <p>Педагоги Пензенского колледжа информационных и промышленных технологий принимают активное участие…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Профориентация в действии!</h3>
+          <p>Преподаватель Пичугина О.Ю. провела профориентационную работу в МБОУ СОШ №12.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794908716&start=0" aria-label="Славный путь"><svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm3 8.5-4 4-2-2L7.6 13l3.4 3.4 4.4-4.4L15 9.5z"/></svg></a>
+      <article class="news-item" data-newsid="1795077798">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077798/1795077826.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">17.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794908716&start=0">Славный путь</a></h3>
-          <p>Патриотическое воспитание — важная часть событийного наполнения региона! Студенты Пензенского…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>В гостях у гимназии</h3>
+          <p>Преподаватель Ерёмина О.Б. встретилась с учащимися 9-х и 11-х классов Классической гимназии №1.</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794835099&start=0" aria-label="Память о тех, кого нет с нами"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 2 1.2 3.7 3 4.6V14h4v-2.4c1.8-.9 3-2.6 3-4.6a5 5 0 0 0-5-5zm-2 5a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM9 16h6l-1 5h-4l-1-5z"/></svg></a>
+      <article class="news-item" data-newsid="1795077369">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077369/1795077378.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">16.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794835099&start=0">Память о тех, кого нет с нами</a></h3>
-          <p>Еженедельная торжественная линейка начала учебной недели в Пензенском ИТ-колледже была…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Повышаем квалификацию</h3>
+          <p>Преподаватель Лузгина Е.В. завершила обучение по программе «КонсультантПлюс | Технология ТОП».</p>
         </div>
       </article>
 
-      <article class="news-item">
-        <a class="ni-img" href="https://ит-колледж.рф/it/news.php?news=1794834570&start=0" aria-label="Опасность предательства"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v1H5v11h14V8h-2V7a5 5 0 0 0-5-5zm-3 6V7a3 3 0 0 1 6 0v1H9z"/></svg></a>
+      <article class="news-item" data-newsid="1795074209">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795074209/1795074221.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
         <div class="ni-body">
-          <span class="ni-date">16.11.2026</span>
-          <h3><a href="https://ит-колледж.рф/it/news.php?news=1794834570&start=0">Опасность предательства</a></h3>
-          <p>Студенты Пензенского ИТ-колледжа продолжают принимать участие в тематических кинолекториях, освещающих…</p>
+          <span class="ni-date">19.11.2026</span>
+          <h3>Курс на успех!</h3>
+          <p>Завершены очередные курсы профессиональной подготовки; слушателям вручили свидетельства по программе сварщика.</p>
+        </div>
+      </article>
+
+      <article class="news-item" data-newsid="1795072776">
+        <span class="ni-img" style="overflow:hidden"><img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795072776/1795072786.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></span>
+        <div class="ni-body">
+          <span class="ni-date">19.11.2026</span>
+          <h3>Мы против вредных привычек</h3>
+          <p>В колледже проходят профилактические мероприятия, посвящённые борьбе с подростковым курением.</p>
         </div>
       </article>
     </div>
     <div style="text-align:center;margin-top:30px">
       <a class="btn btn-primary" href="https://ит-колледж.рф/it/news.php?start=9">Больше новостей</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Страница "Отдельная новость" ===== -->
+<div class="page-view" id="pageNewsView">
+  <div class="page-hero">
+    <div class="wrap" id="nvHeader">
+      <h1>Новость</h1>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="newsViewBack">Новости</a> / <span id="nvTitleCrumb">Новость</span></div>
+    <article class="news-full" id="nvArticle"></article>
+  </div>
+</div>
+
+<!-- ===== Страница "Абитуриентам" ===== -->
+<div class="page-view" id="pageAbitur">
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Абитуриентам</h1>
+      <p>Приёмная комиссия, документы, специальности, стоимость и правила поступления в ИТ-колледж.</p>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="abiturHome">Главная</a> / <span>Абитуриентам</span></div>
+    <h2>Абитуриентам</h2>
+    <div class="sections-grid">
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643013136.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M4 5v14h16V5H4zm14 12H6v-2h12v2zm0-4H6v-1h12v1zm0-3H6V8h12v2z"/></svg></div>
+        <h3>Приёмная комиссия</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643013148.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm9 2.5V7h2.5L15 4.5zM8 4v16h10V9h-3V4H8zm2 6h6v2h-6v-2zm0 4h6v2h-6v-2z"/></svg></div>
+        <h3>Документы и справки</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643013164.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 7.5v9L12 22l10-5.5v-9L12 3zM5 9.2l7 3.8 7-3.8-7-3.8-7 3.8z"/></svg></div>
+        <h3>Специальности</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643013381.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h4v12H7v-8H5V7zm6 0h4v14h-4V7zm6 0h2v12h-2V7z"/></svg></div>
+        <h3>Стоимость</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643013466.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></div>
+        <h3>Подготовительные курсы</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1643016015.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm0 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></div>
+        <h3>Правила и условия приёма</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643013117&pag=1718103879.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 2 1.2 3.7 3 4.6V13H8v2h2v2H8v2h8v-2h-2v-2h2v-2h-2v-1.4c1.8-.9 3-2.6 3-4.6a5 5 0 0 0-5-5z"/></svg></div>
+        <h3>Целевое обучение</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Страница "Студентам" ===== -->
+<div class="page-view" id="pageStudent">
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Студентам</h1>
+      <p>Расписание, практика, воспитательная деятельность, социальный навигатор и студенческая жизнь ИТ-колледжа.</p>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="studentHome">Главная</a> / <span>Студентам</span></div>
+    <h2>Студентам</h2>
+    <div class="sections-grid">
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1643016416.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-1.7 0-5 .8-5 2.5V19h10v-3.5c0-1.7-3.3-2.5-5-2.5zm8 0c-.3 0-.6 0-1 .1 1.2.7 2 1.6 2 2.4V19h6v-3.5c0-1.7-3.3-2.5-6-2.5z"/></svg></div>
+        <h3>Студентам</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1643016453.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v2H4V5zm2 4h12v10H6V9zm2 2v6h8v-6H8z"/></svg></div>
+        <h3>Кружки и секции</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649228614.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6zm0 2h12v9H6V4zm-1 13h14v3H5v-3zM12 6v3H8V6h4z"/></svg></div>
+        <h3>Расписание</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649230316.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4V5zm2 2v10h12V7H6z"/></svg></div>
+        <h3>Практика</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649230994.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 7.5v9L12 22l10-5.5v-9L12 3zm0 3 6.5 3.5L12 13 5.5 9.5 12 6zm-7 7 5 2.7v3.1L5 16.1v-3zm14 0v3.1l-5 2.7v-3.1l5-2.7z"/></svg></div>
+        <h3>Воспитательная деятельность</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649231078.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 7.5v9L12 22l10-5.5v-9L12 3zM5 13.5V9.2l4 2.2-4 2.1zm0 3.4v-1.3l4 2.1v1.3l-4-2.1zm11-1.6 4-2.1v1.3l-4 2.1v-1.3zm-6 1.4 2-1 2 1v1L10 17.7v-1zm5 2.3v-1.3l4-2.1v1.3l-4 2.1z"/></svg></div>
+        <h3>Социальный навигатор</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649231321.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 2 2 7.5v9L12 22l10-5.5v-9L12 2zM5 13.5V9.2l4 2.2-4 2.1zm7 4.7-5.5-3 5.5-3 5.5 3-5.5 3z"/></svg></div>
+        <h3>Студенческий совет общежития</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649231691.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 7.5v9L12 22l10-5.5v-9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></div>
+        <h3>Дополнительные курсы</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649234423.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3zm2 4h4v12H7v-8H5V7zm6 0h4v14h-4V7zm6 0h2v12h-2V7z"/></svg></div>
+        <h3>Вакантные места для приёма (перевода), численность обучающихся</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649234519.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M6 2 4 4l4 4-4 4 2 2 6-6-6-6zM11 8h9v2h-9V8z"/></svg></div>
+        <h3>Результаты перевода, отчисления, восстановления</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649235360.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm9 2.5V7h2.5L15 4.5zM8 4v16h10V9h-3V4H8zm2 6h6v2h-6v-2zm0 4h6v2h-6v-2z"/></svg></div>
+        <h3>Порядок выдачи и оформления справок</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649236089.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></div>
+        <h3>Спортивный клуб «Импульс»</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1662196553.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm0 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></div>
+        <h3>Профилактика экстремизма и терроризма</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1663653700.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5.6-3.8 10.7-9 12-5.2-1.3-9-6.4-9-12V5l9-4zm0 2.3L5 6.6v4.4c0 4.6 3.1 8.9 7 10 3.9-1.1 7-5.4 7-10V6.6l-7-3.3z"/></svg></div>
+        <h3>Безопасность</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1672322305.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7v2zM13 4.1A7 7 0 0 1 19.9 11H13V4.1z"/></svg></div>
+        <h3>План новогодних мероприятий</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1679990887.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-13h2v7h-2V7zm0 9h2v2h-2v-2z"/></svg></div>
+        <h3>Студенческие отряды колледжа</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1742908362.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V8a4 4 0 0 0-4-4zm2 8a2 2 0 0 1-4 0V8a2 2 0 0 1 4 0v4zm-6 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1h2v1a3 3 0 0 1-3 3h-1v2a1 1 0 0 1-2 0v-2h-1a3 3 0 0 1-3-3v-1h2v1z"/></svg></div>
+        <h3>КВН</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1766127071.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5c0 2 1.2 3.7 3 4.6V13H8v2h2v2H8v2h8v-2h-2v-2h2v-2h-2v-1.4c1.8-.9 3-2.6 3-4.6a5 5 0 0 0-5-5z"/></svg></div>
+        <h3>Антинаркотическая работа</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Страница "Выпускникам" ===== -->
+<div class="page-view" id="pageGraduate">
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Выпускникам</h1>
+      <p>Трудоустройство, поддержка молодых специалистов и возможности для профессионального роста после выпуска.</p>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="graduateHome">Главная</a> / <span>Выпускникам</span></div>
+    <h2>Выпускникам</h2>
+    <div class="sections-grid">
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203650&full=1">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM10 4h4v2h-4V4zm10 15H4V8h16v11z"/></svg></div>
+        <h3>Центр карьеры</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203650&pag=1723207101.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></div>
+        <h3>Помощь выпускникам в трудоустройстве</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203650&pag=1723207144.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/></svg></div>
+        <h3>Вакансии и работодатели</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649234423.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm9 2.5V7h2.5L15 4.5zM8 4v16h10V9h-3V4H8zm2 6h6v2h-6v-2zm0 4h6v2h-6v-2z"/></svg></div>
+        <h3>Порядок выдачи и оформления справок</h3>
+        <span class="sc-arrow">Смотреть <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Страница "Партнёрам" ===== -->
+<div class="page-view" id="pagePartners">
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Партнёрам</h1>
+      <p>Сотрудничество, социальные партнёры и возможности взаимодействия с ИТ-колледжем.</p>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="partnersHome">Главная</a> / <span>Партнёрам</span></div>
+    <h2>Партнёрам</h2>
+    <div class="sections-grid">
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203662">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-1.7 0-5 .8-5 2.5V19h10v-3.5c0-1.7-3.3-2.5-5-2.5zm8 0c-.3 0-.6 0-1 .1 1.2.7 2 1.6 2 2.4V19h6v-3.5c0-1.7-3.3-2.5-6-2.5z"/></svg></div>
+        <h3>Сотрудничество с колледжем</h3>
+        <span class="sc-arrow">Перейти <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203650&full=1">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM10 4h4v2h-4V4zm10 15H4V8h16v11z"/></svg></div>
+        <h3>Практика и трудоустройство студентов</h3>
+        <span class="sc-arrow">Перейти <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643016357&pag=1649230316.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4V5zm2 2v10h12V7H6z"/></svg></div>
+        <h3>Организация практики</h3>
+        <span class="sc-arrow">Перейти <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="section-card" href="https://ит-колледж.рф/it/pg.php?rub=1643203662&pag=1643203693.sse">
+        <div class="sc-ico"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg></div>
+        <h3>Наши партнёры</h3>
+        <span class="sc-arrow">Перейти <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Страница "Контакты" ===== -->
+<div class="page-view" id="pageContacts">
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Наши Контакты</h1>
+      <p>Государственное автономное профессиональное образовательное учреждение Пензенской области.</p>
+    </div>
+  </div>
+  <div class="wrap page-body">
+    <div class="nav-breadcrumb"><a id="contactsHome">Главная</a> / <span>Контакты</span></div>
+    <h2>Пензенский колледж информационных и промышленных технологий</h2>
+    <p style="color:var(--muted);max-width:820px;margin-bottom:24px">Государственное автономное профессиональное образовательное учреждение Пензенской области «Пензенский колледж информационных и промышленных технологий (ИТ-колледж)» (ГАПОУ ПО ПКИПТ (ИТ-колледж)).</p>
+
+    <div class="contacts-grid">
+      <div class="contact-tile">
+        <div class="contact-tile-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.7.1.4 0 .8-.3 1l-2.2 2.1z"/></svg></div>
+        <h3>Телефоны</h3>
+        <p><a href="tel:+78412679167">(841-2) 67-91-67</a></p>
+        <p><a href="tel:+78412679161">(841-2) 67-91-61</a></p>
+        <p>Факс: (841-2) 67-91-65</p>
+      </div>
+      <div class="contact-tile">
+        <div class="contact-tile-ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+        <h3>Адрес</h3>
+        <p>пр. Строителей, д. 7, Пенза,<br>Пензенская область, 440066<br>Российская Федерация</p>
+      </div>
+      <div class="contact-tile">
+        <div class="contact-tile-ico"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <h3>Электронная почта</h3>
+        <p><a href="mailto:penza-kipt@mail.ru">penza-kipt@mail.ru</a></p>
+      </div>
+      <div class="contact-tile">
+        <div class="contact-tile-ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15l-1.4 4.4 4.5-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 1 1 .001-16.001A8 8 0 0 1 12 20zm-2-13h5v2h-3v3h-2V7z"/></svg></div>
+        <h3>Режим работы</h3>
+        <p>Пн–Пт: 8:00–17:00<br>Сб: 8:00–14:00</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:36px">Мы в социальных сетях</h2>
+    <p style="color:var(--muted);margin-bottom:16px">Следите за новостями колледжа в официальных сообществах:</p>
+    <div class="social-links">
+      <a class="social-link" href="https://t.me/itkollege" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.91c-.23.22-.41.4-.82.4z"/></svg>
+        Telegram
+      </a>
+      <a class="social-link" href="https://vk.com/pkipt58" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M15.07 2H8.93C3.41 2 2 3.41 2 8.93v6.14C2 20.59 3.41 22 8.93 22h6.14C20.59 22 22 20.59 22 15.07V8.93C22 3.41 20.59 2 15.07 2zm3.03 14.55h-1.77c-.52 0-.69-.4-1.63-1.19-.83-.72-1.19-.88-1.39-.88-.28 0-.36.08-.36.5v1.19c0 .36-.11.49-.6.49-.68 0-1.63-.17-2.86-1.14-1.56-1.23-2.64-3.08-2.74-3.23-.19-.27-.16-.43.06-.43h1.73c.42 0 .55.13.69.6.53 1.69 1.36 2.79 1.79 2.79.15 0 .22-.1.22-.38v-1.7c-.07-1.11-.72-1.16-.72-1.55.02-.42.33-.42.62-.42h2.16c.41 0 .49.13.49.55v2.11c0 .41.08.55.25.55.2 0 .69-.2 1.63-1.3.42-.49.84-1.06 1.13-1.42.21-.28.5-.26.42.15l-.41 1.54c-.02.18-.17.05-1.14.98-.37.32-.59.55-.05.55.59 0 1.33-.15 1.94.02.53.13.4.42.57.65z"/></svg>
+        ВКонтакте
+      </a>
     </div>
   </div>
 </div>
@@ -818,49 +1218,81 @@
       </a>
     </div>
 
-    <article class="featured-news">
+    <article class="featured-news" data-newsid="9643277453" style="cursor:pointer">
       <div class="fn-media">
-        <svg viewBox="0 0 24 24"><path d="M12 6a6 6 0 0 1 6 6h2a8 8 0 0 0-16 0h2a6 6 0 0 1 6-6zm0 3a3 3 0 0 1 3 3h2a5 5 0 0 0-10 0h2a3 3 0 0 1 3-3zm-1 9a1 1 0 0 0 2 0v-1h-2v1z"/></svg>
+        <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/9643277453/1795019035.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
         <span class="news-date"><strong>18.11.2026</strong> · Главное</span>
       </div>
       <div class="fn-body">
         <span class="fn-date">18.11.2026</span>
-        <h3><a href="https://ит-колледж.рф/it/news.php?news=9643277453">Движ в ИТ</a></h3>
-        <p>В Пензенском колледже информационных и промышленных технологий состоялся конкурс «Веб-мастер», ставший одним из ключевых событий профориентационного марафона «ДвижИТ». Мероприятие собрало…</p>
+        <h3>Молодость, карьера и IT</h3>
+        <p>Образовательные площадки, конкурсы профессионального мастерства и кибербитвы позади — Пензенский колледж информационных и промышленных технологий торжественно завершил профориентационный IT-марафон!</p>
       </div>
     </article>
 
     <div class="news-grid">
-      <article class="news-card">
-        <div class="news-media">
-          <svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3zm0 6 4.4 8H7.6L12 9z"/><circle cx="12" cy="16" r="1"/></svg>
-          <span class="news-date">18.11.2026</span>
+      <article class="news-card" data-newsid="1795093658">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093658/1795093804.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
         </div>
-        <div class="news-body"><h3><a href="https://ит-колледж.рф/it/news.php?news=1794983762">Создаём личный финансовый план</a></h3></div>
+        <div class="news-body"><h3>Эффективная коммуникация</h3></div>
       </article>
 
-      <article class="news-card">
-        <div class="news-media">
-          <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM9.5 14.6 7 15.9V19l2.5 1.3z"/></svg>
-          <span class="news-date">18.11.2026</span>
+      <article class="news-card" data-newsid="1795093425">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093425/1795093460.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
         </div>
-        <div class="news-body"><h3><a href="https://ит-колледж.рф/it/news.php?news=1794983639">Интерактивный практикум</a></h3></div>
+        <div class="news-body"><h3>Мастерство полёта</h3></div>
       </article>
 
-      <article class="news-card">
-        <div class="news-media">
-          <svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-1.7 0-5 .8-5 2.5V19h10v-3.5c0-1.7-3.3-2.5-5-2.5zm8 0c-.3 0-.6 0-1 .1 1.2.7 2 1.6 2 2.4V19h6v-3.5c0-1.7-3.3-2.5-6-2.5z"/></svg>
-          <span class="news-date">18.11.2026</span>
+      <article class="news-card" data-newsid="1795089576">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795089576/1795089582.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
         </div>
-        <div class="news-body"><h3><a href="https://ит-колледж.рф/it/news.php?news=1794983325">Атмосфера наставничества</a></h3></div>
+        <div class="news-body"><h3>Здоровье — главный капитал</h3></div>
       </article>
 
-      <article class="news-card">
-        <div class="news-media">
-          <svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/></svg>
-          <span class="news-date">18.11.2026</span>
+      <article class="news-card" data-newsid="1795088503">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795088503/1795088512.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
         </div>
-        <div class="news-body"><h3><a href="https://ит-колледж.рф/it/news.php?news=1794982673">Рассказываем о нас</a></h3></div>
+        <div class="news-body"><h3>Профориентация в действии!</h3></div>
+      </article>
+
+      <article class="news-card" data-newsid="1795077798">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077798/1795077826.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
+        </div>
+        <div class="news-body"><h3>В гостях у гимназии</h3></div>
+      </article>
+
+      <article class="news-card" data-newsid="1795077369">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077369/1795077378.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
+        </div>
+        <div class="news-body"><h3>Повышаем квалификацию</h3></div>
+      </article>
+
+      <article class="news-card" data-newsid="1795074209">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795074209/1795074221.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
+        </div>
+        <div class="news-body"><h3>Курс на успех!</h3></div>
+      </article>
+
+      <article class="news-card" data-newsid="1795072776">
+        <div class="news-media" style="position:relative;overflow:hidden">
+          <img src="https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795072776/1795072786.jpg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
+          <span class="news-date">19.11.2026</span>
+        </div>
+        <div class="news-body"><h3>Мы против вредных привычек</h3></div>
       </article>
     </div>
   </div>
@@ -1159,7 +1591,7 @@
         <h4>Быстрые ссылки</h4>
         <ul class="footer-links">
           <li><a href="https://ит-колледж.рф/index_old.php">Старая версия сайта</a></li>
-          <li><a href="https://ит-колледж.рф/it/index.php">Главная</a></li>
+          <li><a href="#" id="footerHome">Главная</a></li>
           <li><a href="https://ит-колледж.рф/it/page.php?rub=1649246204">Противодействие коррупции</a></li>
           <li><a href="#" id="footerNews">Новости</a></li>
           <li><a href="https://ит-колледж.рф/it/gallery.php">Галерея</a></li>
@@ -1185,100 +1617,67 @@
 </footer>
 
 <!-- ===== Модальные окна аккаунта ===== -->
-<div class="modal-overlay" id="loginModal">
+<!-- ===== Админ-панель: вход ===== -->
+<div class="modal-overlay" id="adminLoginModal">
   <div class="modal">
-    <div class="modal-head"><h3>Вход</h3><button class="modal-close" data-close="loginModal" aria-label="Закрыть">&times;</button></div>
+    <div class="modal-head"><h3>Вход в админ-панель</h3><button class="modal-close" data-close="adminLoginModal" aria-label="Закрыть">&times;</button></div>
     <div class="modal-body">
-      <div class="form-error" id="loginError"></div>
-      <div class="form-group"><label>Логин (или e-mail)</label><input type="text" id="loginEmail" placeholder="ivanov@mail.ru"></div>
-      <div class="form-group"><label>Пароль</label><input type="password" id="loginPass" placeholder="••••••••"></div>
-      <button class="btn btn-primary btn-block" id="loginSubmit">Войти</button>
-      <div class="modal-switch">Нет аккаунта? <a data-open="RegisterModal">Зарегистрироваться</a></div>
+      <div class="form-error" id="adminLoginError"></div>
+      <div class="form-group"><label>Почта администратора</label><input type="text" id="adminEmail" placeholder="Почта" autocomplete="off"></div>
+      <div class="form-group"><label>Секретный код</label><input type="password" id="adminSecret" placeholder="Секретный код" autocomplete="off"></div>
+      <div class="form-group"><label>Пароль администратора</label><input type="password" id="adminPass" placeholder="Пароль" autocomplete="off"></div>
+      <button class="btn btn-primary btn-block" id="adminLoginSubmit">Войти</button>
+      <div class="form-hint" style="margin-top:12px">Введите почту, секретный код и пароль. Неправильные данные 5 раз подряд временно блокируют вход.</div>
     </div>
   </div>
 </div>
 
-<div class="modal-overlay" id="RegisterModal">
+<!-- ===== Админ-панель: добавление новости ===== -->
+<div class="modal-overlay" id="adminPanelModal">
   <div class="modal">
-    <div class="modal-head"><h3>Регистрация</h3><button class="modal-close" data-close="RegisterModal" aria-label="Закрыть">&times;</button></div>
+    <div class="modal-head"><h3>Добавить новость</h3><button class="modal-close" data-close="adminPanelModal" aria-label="Закрыть">&times;</button></div>
     <div class="modal-body">
-      <div class="form-error" id="regError"></div>
-      <div class="form-group"><label>Имя</label><input type="text" id="regName" placeholder="Иван Иванов"></div>
-      <div class="form-group"><label>E-mail (логин)</label><input type="email" id="regEmail" placeholder="ivanov@mail.ru"></div>
-      <div class="form-group"><label>Пароль</label><input type="password" id="regPass" placeholder="Не менее 6 символов"></div>
-      <button class="btn btn-primary btn-block" id="regSubmit">Создать аккаунт</button>
-      <div class="modal-switch">Уже есть аккаунт? <a data-open="loginModal">Войти</a></div>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="profileModal">
-  <div class="modal">
-    <div class="modal-head"><h3>Мой профиль</h3><button class="modal-close" data-close="profileModal" aria-label="Закрыть">&times;</button></div>
-    <div class="modal-body">
-      <div class="form-error" id="profError"></div>
-      <div class="badge-row">
-        <label class="avatar-upload" id="avatarUpload" title="Нажмите, чтобы загрузить JPG">
-          <img class="avatar-preview" id="profAvatar" alt="Аватар — нажмите для загрузки">
-          <span class="avatar-hint">Нажмите на фото, чтобы загрузить JPG</span>
-          <input type="file" id="avatarFile" accept=".jpg,.jpeg,image/jpeg">
-        </label>
-        <div class="avatar-actions">
-          <button class="btn-file" id="avatarRemove" type="button">Убрать аватар</button>
+      <div class="form-error" id="adminPanelError"></div>
+      <div class="form-group"><label>Заголовок новости</label><input type="text" id="adminTitle" placeholder="Например: Новый конкурс"></div>
+      <div class="form-group">
+        <label>Изображение (JPG, необязательно)</label>
+        <div style="display:flex;gap:14px;align-items:center">
+          <img id="adminImgPreview" alt="Превью" style="width:76px;height:76px;border-radius:8px;object-fit:cover;background:var(--bg);border:1px solid var(--line);display:none">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <button class="btn-file" id="adminImgBtn" type="button">Выбрать изображение</button>
+            <button class="btn-file" id="adminImgRemove" type="button" style="display:none">Убрать изображение</button>
+          </div>
         </div>
+        <input type="file" id="adminImgFile" accept=".jpg,.jpeg,image/jpeg" style="display:none">
       </div>
-      <div style="height:16px"></div>
-      <div class="form-group"><label>Имя</label><input type="text" id="profName"></div>
-      <div class="form-group"><label>E-mail</label><input type="email" id="profEmail"></div>
-      <button class="btn btn-primary btn-block" id="profSave">Сохранить</button>
+      <div class="form-group"><label>Краткий текст</label><textarea id="adminText" rows="4" style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:8px;font-size:.95rem;font-family:inherit;color:var(--ink);resize:vertical"></textarea></div>
+      <div class="form-group"><label>Полный текст (необязательно)</label><textarea id="adminFull" rows="4" style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:8px;font-size:.95rem;font-family:inherit;color:var(--ink);resize:vertical"></textarea></div>
+      <button class="btn btn-primary btn-block" id="adminSaveNews">Опубликовать</button>
       <div style="height:12px"></div>
-      <button class="btn btn-ghost-prof" id="profLogout" type="button">Выйти из аккаунта</button>
+      <button class="btn btn-ghost-prof" id="adminLogout" type="button">Выйти из админ-панели</button>
+      <div class="form-hint" style="margin-top:14px">Новость появится в ленте «Новости» на этом устройстве сразу после публикации.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Поиск ===== -->
+<div class="modal-overlay" id="searchModal">
+  <div class="modal" style="max-width:560px">
+    <div class="modal-head"><h3>Поиск по сайту</h3><button class="modal-close" data-close="searchModal" aria-label="Закрыть">&times;</button></div>
+    <div class="modal-body">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" class="search-ico"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+        <input type="text" id="searchInput" placeholder="Например: абитуриентам, новости, практика…" autocomplete="off">
+      </div>
+      <div class="search-results" id="searchResults"></div>
     </div>
   </div>
 </div>
 
 <script>
 (function(){
-  var STORAGE_KEY = 'pkipt_users';
-  var SESSION_KEY = 'pkipt_session';
-  function getUsers(){ try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ return {}; } }
-  function saveUsers(u){ localStorage.setItem(STORAGE_KEY, JSON.stringify(u)); }
-  function currentUser(){
-    var session = localStorage.getItem(SESSION_KEY);
-    if(!session) return null;
-    return getUsers()[session] || null;
-  }
-
-  function defaultAvatar(name){
-    var letter = (name||'?').trim().charAt(0).toUpperCase() || '?';
-    var bg = ['#2c5f8a','#1c2b3a','#224c71','#3a6371'];
-    var c = bg[(name||'').length % bg.length];
-    return "data:image/svg+xml;utf8," + encodeURIComponent(
-      "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'>" +
-      "<rect width='48' height='48' fill='" + c + "'/>" +
-      "<text x='24' y='31' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>" + letter + "</text></svg>"
-    );
-  }
-
   function openModal(id){ document.getElementById(id).classList.add('open'); }
   function closeModal(id){ document.getElementById(id).classList.remove('open'); }
-
-  function updateAuthUI(){
-    var u = currentUser();
-    var loginBtn = document.getElementById('loginBtn');
-    var userMenu = document.getElementById('userMenu');
-    var navAvatar = document.getElementById('navAvatar');
-    var navName = document.getElementById('navUserName');
-    if(u){
-      if(loginBtn) loginBtn.style.display = 'none';
-      userMenu.style.display = 'inline-flex';
-      navAvatar.src = u.avatar || defaultAvatar(u.name);
-      navName.textContent = u.name || u.email;
-    } else {
-      if(loginBtn) loginBtn.style.display = '';
-      userMenu.style.display = 'none';
-    }
-  }
 
   function showError(elId, msg){
     var el = document.getElementById(elId);
@@ -1287,9 +1686,70 @@
     setTimeout(function(){ el.classList.remove('show'); }, 4000);
   }
 
-  // Открытие модалок
-  document.getElementById('loginBtn').addEventListener('click', function(){ openModal('loginModal'); });
-  document.getElementById('userMenu').addEventListener('click', function(){ openModal('profileModal'); loadProfile(); });
+  // ===== Поиск =====
+  var searchInput = document.getElementById('searchInput');
+  var searchResults = document.getElementById('searchResults');
+  function buildSearchIndex(){
+    var items = [];
+    function addPage(id, title, cat, targetView){
+      var el = document.getElementById(id);
+      if(!el) return;
+      var text = el.textContent.replace(/\s+/g,' ').trim();
+      items.push({ title: title, cat: cat, text: text, go: targetView });
+    }
+    addPage('pageSections','Разделы сайта','Раздел сайта', function(){ showSectionsPage(); });
+    addPage('pageNews','Новости','Раздел сайта', function(){ showNewsPage(); });
+    addPage('pageAbitur','Абитуриентам','Раздел сайта', function(){ showAbiturPage(); });
+    addPage('pageStudent','Студентам','Раздел сайта', function(){ showStudentPage(); });
+    addPage('pageGraduate','Выпускникам','Раздел сайта', function(){ showGraduatePage(); });
+    addPage('pagePartners','Партнёрам','Раздел сайта', function(){ showPartnersPage(); });
+    addPage('pageContacts','Контакты','Раздел сайта', function(){ showContactsPage(); });
+    // Динамические новости
+    try { JSON.parse(localStorage.getItem('pkipt_news') || '[]').forEach(function(n){
+      items.push({ title: n.title, cat: 'Новость', text: (n.text||'')+' '+(n.full||''), go: (function(item){ return function(){ openNewsView(item.id, item.title, item.full||item.text, item.img, item.date); }; })(n) });
+    }); } catch(e){}
+    // Статические новости
+    Object.keys(staticNewsData || {}).forEach(function(k){
+      var it = staticNewsData[k];
+      items.push({ title: it.title, cat: 'Новость', text: (it.text||'')+' '+(it.full||''), go: (function(id){ return function(){ openStaticNews(id); }; })(k) });
+    });
+    return items;
+  }
+  function runSearch(q){
+    if(!q){
+      searchResults.innerHTML = '';
+      return;
+    }
+    var searchIndex = buildSearchIndex();
+    q = q.toLowerCase();
+    var out = [];
+    searchIndex.forEach(function(it){
+      if((it.title.toLowerCase().indexOf(q) > -1) || (it.text.toLowerCase().indexOf(q) > -1)){
+        out.push(it);
+      }
+    });
+    if(!out.length){ searchResults.innerHTML = '<div class="search-empty">Ничего не найдено. Попробуйте изменить запрос.</div>'; return; }
+    var html = '';
+    out.slice(0,10).forEach(function(it){
+      var snippet = it.text;
+      var idx = snippet.toLowerCase().indexOf(q);
+      var start = Math.max(0, idx-40);
+      var sn = (idx>-1 ? (start>0?'…':'') + snippet.substr(start, 110) + (start+110<snippet.length?'…':'') : snippet.substr(0,100));
+      html += '<div class="sr-item"><span class="sr-title">' + escapeHtml(it.title) + '</span>' +
+              (sn ? '<span class="sr-title" style="font-weight:400;font-size:.85rem;color:var(--muted)"> — ' + escapeHtml(sn) + '</span>' : '') +
+              '<span class="sr-cat">' + escapeHtml(it.cat) + '</span></div>';
+    });
+    searchResults.innerHTML = html;
+    searchResults.querySelectorAll('.sr-item').forEach(function(el, i){
+      el.addEventListener('click', function(){ closeModal('searchModal'); out[i].go(); });
+    });
+  }
+  searchInput.addEventListener('input', function(){ runSearch(searchInput.value); });
+  document.getElementById('navSearchBtn').addEventListener('click', function(e){
+    e.preventDefault();
+    openModal('searchModal');
+    setTimeout(function(){ searchInput.focus(); }, 50);
+  });
   document.querySelectorAll('[data-open]').forEach(function(el){
     el.addEventListener('click', function(){
       closeModal('loginModal'); closeModal('RegisterModal');
@@ -1303,141 +1763,119 @@
     ov.addEventListener('click', function(e){ if(e.target === ov) ov.classList.remove('open'); });
   });
 
-  // Регистрация
-  document.getElementById('regSubmit').addEventListener('click', function(){
-    var name = document.getElementById('regName').value.trim();
-    var email = document.getElementById('regEmail').value.trim().toLowerCase();
-    var pass = document.getElementById('regPass').value;
-    if(!name){ showError('regError','Введите имя'); return; }
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ showError('regError','Введите корректный e-mail'); return; }
-    if(pass.length < 6){ showError('regError','Пароль должен быть не короче 6 символов'); return; }
-    var users = getUsers();
-    var loginKey = email.toLowerCase();
-    if(users[loginKey]){ showError('regError','Такой e-mail уже зарегистрирован. Выполните вход.'); return; }
-    users[loginKey] = { name: name, email: email, pass: pass, avatar: '' };
-    saveUsers(users);
-    localStorage.setItem(SESSION_KEY, loginKey);
-    closeModal('RegisterModal');
-    document.getElementById('regName').value='';
-    document.getElementById('regEmail').value='';
-    document.getElementById('regPass').value='';
-    updateAuthUI();
-  });
-
-  // Вход
-  document.getElementById('loginSubmit').addEventListener('click', function(){
-    var email = document.getElementById('loginEmail').value.trim().toLowerCase();
-    var pass = document.getElementById('loginPass').value;
-    var users = getUsers();
-    var u = users[email];
-    if(!u || u.pass !== pass){ showError('loginError','Неверный логин или пароль'); return; }
-    localStorage.setItem(SESSION_KEY, email);
-    closeModal('loginModal');
-    document.getElementById('loginEmail').value='';
-    document.getElementById('loginPass').value='';
-    updateAuthUI();
-  });
-
-  // Профиль
-  function loadProfile(){
-    var u = currentUser(); if(!u) return;
-    document.getElementById('profName').value = u.name || '';
-    document.getElementById('profEmail').value = u.email || '';
-    document.getElementById('profAvatar').src = u.avatar || defaultAvatar(u.name);
-  }
-  document.getElementById('avatarFile').addEventListener('change', function(e){
-    var file = e.target.files[0];
-    if(!file) return;
-    var isJpg = file.type === 'image/jpeg' || /\.jpe?g$/i.test(file.name);
-    if(!isJpg){ showError('profError','Можно загрузить только картинку в формате JPG'); e.target.value=''; return; }
-    if(file.size > 5 * 1024 * 1024){ showError('profError','Файл больше 5 МБ. Выберите JPG поменьше.'); e.target.value=''; return; }
-    var reader = new FileReader();
-    reader.onload = function(){
-      var img = new Image();
-      img.onload = function(){
-        // Сжимаем до 256x256, чтобы аватар корректно сохранился
-        var canvas = document.createElement('canvas');
-        var max = 256;
-        var w = img.width, h = img.height;
-        if(w > max || h > max){ var r = Math.min(max/w, max/h); w = Math.round(w*r); h = Math.round(h*r); }
-        canvas.width = w; canvas.height = h;
-        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-        var dataUrl = canvas.toDataURL('image/jpeg', 0.85);
-        try {
-          localStorage.setItem('pkipt_avatar_tmp', dataUrl);
-          document.getElementById('profAvatar').src = dataUrl;
-        } catch(err){ showError('profError','Не удалось сохранить аватар. Попробуйте файл поменьше.'); }
-      };
-      img.onerror = function(){ showError('profError','Не удалось прочитать файл. Загрузите корректный JPG.'); };
-      img.src = reader.result;
-    };
-    reader.readAsDataURL(file);
-    e.target.value = '';
-  });
-  document.getElementById('avatarRemove').addEventListener('click', function(){
-    document.getElementById('profAvatar').src = defaultAvatar(currentUser().name);
-    localStorage.removeItem('pkipt_avatar_tmp');
-  });
-  document.getElementById('profSave').addEventListener('click', function(){
-    var u = currentUser(); if(!u) return;
-    var name = document.getElementById('profName').value.trim();
-    if(!name){ showError('profError','Введите имя'); return; }
-    var users = getUsers();
-    var saved = users[u.email];
-    var tmp = localStorage.getItem('pkipt_avatar_tmp');
-    if(saved){
-      saved.name = name;
-      if(tmp){ saved.avatar = tmp; localStorage.removeItem('pkipt_avatar_tmp'); }
-      users[u.email] = saved;
-      saveUsers(users);
-      updateAuthUI();
-      closeModal('profileModal');
-    }
-  });
-  document.getElementById('profLogout').addEventListener('click', function(){
-    localStorage.removeItem(SESSION_KEY);
-    localStorage.removeItem('pkipt_avatar_tmp');
-    closeModal('profileModal');
-    updateAuthUI();
-  });
-
-  // ===== Страницы (разделы сайта) =====
+  // ===== Страницы =====
   var mainSections = document.querySelectorAll('body > section');
   var pageSections = document.getElementById('pageSections');
   var pageNews = document.getElementById('pageNews');
+  var pageNewsView = document.getElementById('pageNewsView');
+  var pageAbitur = document.getElementById('pageAbitur');
+  var pageStudent = document.getElementById('pageStudent');
+  var pageGraduate = document.getElementById('pageGraduate');
+  var pagePartners = document.getElementById('pagePartners');
+  var pageContacts = document.getElementById('pageContacts');
   var footer = document.querySelector('.site-footer');
+  var allPages = [pageSections, pageNews, pageNewsView, pageAbitur, pageStudent, pageGraduate, pagePartners, pageContacts];
 
   function hideAllPages(){
-    pageSections.classList.remove('active');
-    pageNews.classList.remove('active');
+    allPages.forEach(function(p){ p.classList.remove('active'); });
     mainSections.forEach(function(s){ s.style.display = ''; });
     footer.style.display = '';
   }
   function showPage(pageEl, view){
     mainSections.forEach(function(s){ s.style.display = 'none'; });
     footer.style.display = 'none';
-    pageSections.classList.remove('active');
-    pageNews.classList.remove('active');
+    allPages.forEach(function(p){ p.classList.remove('active'); });
     pageEl.classList.add('active');
     window.scrollTo(0,0);
     history.pushState({view:view}, '');
   }
   function showSectionsPage(){ showPage(pageSections, 'sections'); }
   function showNewsPage(){ showPage(pageNews, 'news'); }
+  function openNewsView(id, title, fullText, img, date){
+    mainSections.forEach(function(s){ s.style.display = 'none'; });
+    footer.style.display = 'none';
+    allPages.forEach(function(p){ p.classList.remove('active'); });
+    pageNewsView.classList.add('active');
+    var titleSafe = title || 'Новость';
+    document.getElementById('nvHeader').querySelector('h1').textContent = titleSafe;
+    document.getElementById('nvTitleCrumb').textContent = titleSafe;
+    document.getElementById('newsViewBack').onclick = function(e){ e.preventDefault(); showNewsPage(); };
+    var imgHtml = img ? '<div class="nf-img-wrap"><img src="' + img + '" alt=""></div>' : '';
+    var dateHtml = date ? '<span class="nf-date">' + date + '</span>' : '';
+    var textSafe = escapeHtml(fullText || titleSafe);
+    var paras = textSafe.split(/\n\s*\n/).map(function(p){ return '<p>' + p.replace(/\n+/g,'<br>') + '</p>'; }).join('');
+    document.getElementById('nvArticle').innerHTML =
+      dateHtml + '<h1 class="nf-title">' + titleSafe + '</h1>' + imgHtml +
+      '<div class="nf-text">' + paras + '</div>';
+    window.scrollTo(0,0);
+    history.pushState({view:'newsview'}, '');
+  }
+  function escapeHtml(str){
+    if(!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function showAbiturPage(){ showPage(pageAbitur, 'abitur'); }
+  function showStudentPage(){ showPage(pageStudent, 'student'); }
+  function showGraduatePage(){ showPage(pageGraduate, 'graduate'); }
+  function showPartnersPage(){ showPage(pagePartners, 'partners'); }
+  function showContactsPage(){ showPage(pageContacts, 'contacts'); }
   function showHome(){
     hideAllPages();
     window.scrollTo(0,0);
     history.pushState({view:'home'}, '');
   }
+  // ===== Версия для слабовидящих =====
+  var VISION_KEY = 'pkipt_vision';
+  var eyeBtn = document.querySelector('.btn-eye');
+  function applyVision(on){
+    document.body.classList.toggle('vision', on);
+    if(eyeBtn) eyeBtn.classList.toggle('active', on);
+    if(on) localStorage.setItem(VISION_KEY,'1'); else localStorage.removeItem(VISION_KEY);
+  }
+  if(localStorage.getItem(VISION_KEY)==='1') applyVision(true);
+  if(eyeBtn){
+    eyeBtn.addEventListener('click', function(){
+      var on = !document.body.classList.contains('vision');
+      applyVision(on);
+    });
+  }
+
+  document.getElementById('navHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); closeMenu(); });
+  document.getElementById('footerHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
   document.getElementById('navSections').addEventListener('click', function(e){ e.preventDefault(); showSectionsPage(); closeMenu(); });
   document.getElementById('footerSections').addEventListener('click', function(e){ e.preventDefault(); showSectionsPage(); });
   document.getElementById('sectionsHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
   document.getElementById('navNews').addEventListener('click', function(e){ e.preventDefault(); showNewsPage(); closeMenu(); });
   document.getElementById('footerNews').addEventListener('click', function(e){ e.preventDefault(); showNewsPage(); });
   document.getElementById('newsHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  document.getElementById('navAbitur').addEventListener('click', function(e){ e.preventDefault(); showAbiturPage(); closeMenu(); });
+  document.getElementById('abiturHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  document.getElementById('navStudent').addEventListener('click', function(e){ e.preventDefault(); showStudentPage(); closeMenu(); });
+  document.getElementById('studentHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  document.getElementById('navGraduate').addEventListener('click', function(e){ e.preventDefault(); showGraduatePage(); closeMenu(); });
+  document.getElementById('graduateHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  document.getElementById('navPartners').addEventListener('click', function(e){ e.preventDefault(); showPartnersPage(); closeMenu(); });
+  document.getElementById('partnersHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  document.getElementById('navContacts').addEventListener('click', function(e){ e.preventDefault(); showContactsPage(); closeMenu(); });
+  document.getElementById('contactsHome').addEventListener('click', function(e){ e.preventDefault(); showHome(); });
+  // Клик по любой статической карточке новости открывает внутреннюю страницу
+  document.addEventListener('click', function(e){
+    var card = e.target.closest ? e.target.closest('[data-newsid]') : null;
+    if(card && !card.closest('a')){
+      var id = card.getAttribute('data-newsid');
+      if(staticNewsData[id]) openStaticNews(id);
+    }
+  });
   window.addEventListener('popstate', function(e){
-    if(e.state && e.state.view === 'sections') showSectionsPage();
-    else if(e.state && e.state.view === 'news') showNewsPage();
+    var v = e.state && e.state.view;
+    if(v === 'sections') showSectionsPage();
+    else if(v === 'news') showNewsPage();
+    else if(v === 'newsview') showNewsPage();
+    else if(v === 'abitur') showAbiturPage();
+    else if(v === 'student') showStudentPage();
+    else if(v === 'graduate') showGraduatePage();
+    else if(v === 'partners') showPartnersPage();
+    else if(v === 'contacts') showContactsPage();
     else showHome();
   });
 
@@ -1457,8 +1895,257 @@
     toggleBtn.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
   });
 
+  // ===== Админ-панель =====
+  var ADMIN_SESSION = 'pkipt_admin_session';
+  var ADMIN_FAIL_KEY = 'pkipt_admin_fail';
+  var NEWS_KEY = 'pkipt_news';
+  var MAX_FAILS = 5;
+  var LOCK_MS = 15 * 60 * 1000;
+  // Зашифрованные (SHA-256) данные для входа: почта, секретный код, пароль
+  var ADMIN_EMAIL_HASH = '24529ce8a395dd956f3382ef2b8b6d3ae6be445125574185d942244021a891d3';
+  var ADMIN_SECRET_HASH = '6e4f45d1bd1b287c50587693fdf8bc79a700f4a3f14fb1ddba61b471624f34be';
+  var ADMIN_PASS_HASH = '07467691027d0ad11e55329b07c281c23570de8fce653d53749237ed670417ca';
+
+  function getNews(){ try { return JSON.parse(localStorage.getItem(NEWS_KEY)) || []; } catch(e){ return []; } }
+  function saveNews(n){ localStorage.setItem(NEWS_KEY, JSON.stringify(n)); }
+
+  function sha256(str){
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(str))
+      .then(function(buf){ return Array.prototype.map.call(new Uint8Array(buf), function(b){ return b.toString(16).padStart(2,'0'); }).join(''); });
+  }
+  function getFailState(){
+    try { return JSON.parse(localStorage.getItem(ADMIN_FAIL_KEY)); } catch(e){ return null; }
+  }
+  function isLocked(){
+    var f = getFailState();
+    if(f && f.count >= MAX_FAILS && f.lockedUntil > Date.now()) return true;
+    return false;
+  }
+  function recordFail(){
+    var f = getFailState() || { count: 0, lockedUntil: 0 };
+    f.count += 1;
+    if(f.count >= MAX_FAILS) f.lockedUntil = Date.now() + LOCK_MS;
+    localStorage.setItem(ADMIN_FAIL_KEY, JSON.stringify(f));
+  }
+  function resetFail(){ localStorage.removeItem(ADMIN_FAIL_KEY); }
+
+  function openAdminLogin(){
+    document.getElementById('adminEmail').value = '';
+    document.getElementById('adminSecret').value = '';
+    document.getElementById('adminPass').value = '';
+    openModal('adminLoginModal');
+  }
+
+  document.getElementById('adminBtn').addEventListener('click', function(){
+    var f = getFailState();
+    if(f && f.count >= MAX_FAILS && Date.now() < f.lockedUntil){
+      var left = Math.ceil((f.lockedUntil - Date.now())/60000);
+      showError('adminLoginError', 'Слишком много попыток. Вход заблокирован на ' + left + ' мин.');
+      openModal('adminLoginModal');
+      return;
+    }
+    if(localStorage.getItem(ADMIN_SESSION)){
+      openModal('adminPanelModal');
+      return;
+    }
+    openAdminLogin();
+  });
+
+  document.getElementById('adminLogout').addEventListener('click', function(){
+    localStorage.removeItem(ADMIN_SESSION);
+    closeModal('adminPanelModal');
+  });
+
+  document.getElementById('adminLoginSubmit').addEventListener('click', function(){
+    if(isLocked()){
+      var f = getFailState();
+      var left = Math.ceil((f.lockedUntil - Date.now())/60000);
+      showError('adminLoginError', 'Слишком много попыток. Вход заблокирован на ' + left + ' мин.');
+      return;
+    }
+    var email = document.getElementById('adminEmail').value.trim().toLowerCase();
+    var secret = document.getElementById('adminSecret').value;
+    var pass = document.getElementById('adminPass').value;
+    Promise.all([sha256(email), sha256(secret), sha256(pass)]).then(function(hashes){
+      var ok = hashes[0] === ADMIN_EMAIL_HASH && hashes[1] === ADMIN_SECRET_HASH && hashes[2] === ADMIN_PASS_HASH;
+      if(ok){
+        localStorage.setItem(ADMIN_SESSION, Math.random().toString(36).slice(2) + Date.now().toString(36));
+        resetFail();
+        document.getElementById('adminEmail').value='';
+        document.getElementById('adminSecret').value='';
+        document.getElementById('adminPass').value='';
+        closeModal('adminLoginModal');
+        openModal('adminPanelModal');
+      } else {
+        recordFail();
+        var f2 = getFailState();
+        var remaining = MAX_FAILS - f2.count;
+        if(f2.count >= MAX_FAILS){
+          showError('adminLoginError', 'Вход заблокирован на 15 минут.');
+        } else {
+          showError('adminLoginError', 'Неверно указаны почта, секретный код или пароль. Осталось попыток: ' + remaining);
+        }
+      }
+    });
+  });
+  document.getElementById('adminImgBtn').addEventListener('click', function(){ document.getElementById('adminImgFile').click(); });
+  document.getElementById('adminImgRemove').addEventListener('click', function(){
+    document.getElementById('adminImgPreview').style.display = 'none';
+    document.getElementById('adminImgRemove').style.display = 'none';
+    document.getElementById('adminImgFile').value = '';
+    localStorage.removeItem('pkipt_admin_img_tmp');
+  });
+  document.getElementById('adminImgFile').addEventListener('change', function(e){
+    var file = e.target.files[0];
+    if(!file) return;
+    var isJpg = file.type === 'image/jpeg' || /\.jpe?g$/i.test(file.name);
+    if(!isJpg){ showError('adminPanelError','Изображение должно быть в формате JPG'); e.target.value=''; return; }
+    if(file.size > 4 * 1024 * 1024){ showError('adminPanelError','Файл больше 4 МБ'); e.target.value=''; return; }
+    var reader = new FileReader();
+    reader.onload = function(){
+      var img = new Image();
+      img.onload = function(){
+        var canvas = document.createElement('canvas');
+        var max = 640;
+        var w = img.width, h = img.height;
+        if(w > max || h > max){ var r = Math.min(max/w, max/h); w = Math.round(w*r); h = Math.round(h*r); }
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        var dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+        try {
+          localStorage.setItem('pkipt_admin_img_tmp', dataUrl);
+          document.getElementById('adminImgPreview').src = dataUrl;
+          document.getElementById('adminImgPreview').style.display = 'block';
+          document.getElementById('adminImgRemove').style.display = '';
+        } catch(err){ showError('adminPanelError','Не удалось сохранить изображение. Выберите файл поменьше.'); }
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+    e.target.value = '';
+  });
+
+  document.getElementById('adminSaveNews').addEventListener('click', function(){
+    var title = document.getElementById('adminTitle').value.trim();
+    var text = document.getElementById('adminText').value.trim();
+    var full = document.getElementById('adminFull').value.trim();
+    if(!title){ showError('adminPanelError','Введите заголовок новости'); return; }
+    if(!text){ showError('adminPanelError','Введите краткий текст новости'); return; }
+    var img = localStorage.getItem('pkipt_admin_img_tmp') || '';
+    var news = getNews();
+    var now = new Date();
+    var dd = String(now.getDate()).padStart(2,'0');
+    var mm = String(now.getMonth()+1).padStart(2,'0');
+    var yyyy = now.getFullYear();
+    news.unshift({
+      title: title,
+      text: text,
+      full: full,
+      img: img,
+      date: dd + '.' + mm + '.' + yyyy,
+      id: Date.now()
+    });
+    saveNews(news);
+    document.getElementById('adminTitle').value='';
+    document.getElementById('adminText').value='';
+    document.getElementById('adminFull').value='';
+    localStorage.removeItem('pkipt_admin_img_tmp');
+    document.getElementById('adminImgPreview').style.display = 'none';
+    document.getElementById('adminImgRemove').style.display = 'none';
+    closeModal('adminPanelModal');
+    renderDynamicNews();
+  });
+
+  // Актуальные новости с реального сайта (ит-колледж.рф) от 19.11.2026
+  var staticNewsData = {
+    '9643277453': { title:'Молодость, карьера и IT', date:'18.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/9643277453/1795019035.jpg',
+      text:'Образовательные площадки, конкурсы профессионального мастерства и кибербитвы позади — колледж завершил профориентационный IT-марафон.',
+      full:'Образовательные площадки, конкурсы профессионального мастерства и кибербитвы позади — Пензенский колледж информационных и промышленных технологий торжественно завершил профориентационный IT-марафон!\n\nIV Международный марафон в сфере цифровых технологий «ДвижИТ» отгремел сегодня в Центре культуры и досуга. Школьники и студенты, педагоги и работодатели, администрация и социальные партнёры — все собрались в одном месте для качественного обмена опытом и чествования победителей.\n\n🏆 ВРЕМЯ ОБЪЯВИТЬ РЕЗУЛЬТАТЫ!\n\n3D-моделирование «Футуристическое будущее»: 🥇 Сосёнкова Милана Сергеевна; 🥈 Полькин Александр Юрьевич; 🥉 Белобородов Владимир Александрович.\n\n«WEB-архитектор»: 🥇 Брюхачев Максим Сергеевич; 🥈 Кутаев Артем Маратович; 🥉 Кутаев Вадим Маратович.\n\nПИТОН «Чистый код»: 🥇 Непеин Егор Александрович; 🥈 Капёнкина Виктория Олеговна; 🥉 Прошин Никита Сергеевич.\n\nСистемное администрирование «Проектирование локально-вычислительных сетей»: 🥇 Басманов Степан Васильевич; 🥈 Поляков Дмитрий Вячеславович; 🥉 Кузин Арсений Владимирович.\n\nМобильная разработка «Цифровой прорыв: твой проект стартует здесь»: 🥇 Шишкин Иван Михайлович; 🥈 Хохлова Анна Андреевна; 🥉 Самсонкина Анастасия Андреевна.\n\n«ВЕБ-мастер»: 🥇 Попова Полина Сергеевна; 🥈 Елисеев Владислав Александрович; 🥉 Черниченко Никита Владимирович.\n\n«Инженерный дизайн САПР»: 🥇 Волобуев Илья Вячеславович; 🥈 Осипов Михаил Сергеевич; 🥉 Янборисов Айрат Рустамович.\n\n«Кибербитва»: 🥇 Команда учебного комплекса информационных технологий Пензенского ИТ-колледжа; 🥈 Команда Саратовского архитектурно-строительного колледжа; 🥉 Команда учебного комплекса промышленных технологий Пензенского ИТ-колледжа.\n\nБлагодарим каждого участника и организатора за этот невероятный драйв и атмосферу технологичного будущего! Наступает время прогресса, и особенно ценен вклад молодых — будущих специалистов, уже сейчас вносящих вклад в развитие отечественного производства.\n\nПоздравляем с успешным завершением марафона. Будущее за нами! Это был самый яркий Движ в ИТ.' },
+    '1795093658': { title:'Эффективная коммуникация', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093658/1795093804.jpg',
+      text:'Центр карьеры провёл встречу обучающихся с ИТ-компанией ОНЛАНТА о работе IT-поддержки и коммуникации в команде.',
+      full:'Центром карьеры Пензенского ИТ-колледжа проведена очередная встреча обучающихся с представителями ИТ-компании ОНЛАНТА, посвящённая работе IT-поддержки и эффективной коммуникации в команде.\n\n📲 В рамках первого мастер-класса «Service Desk и ITSM: как работает IT-поддержка в современной компании» спикер Светлана Киселева, руководитель группы Service Desk, подробно раскрыла устройство процессов поддержки. Участники разобрали полный цикл работы с обращениями — от приёма заявки до закрытия инцидента, изучили принципы приоритизации и распределения задач по линиям поддержки.\n\n📘 Второй мастер-класс — «Эффективная коммуникация в IT-команде» от Юлии Секлетовой, ведущего менеджера по обучению и развитию персонала, был посвящён практикам взаимодействия внутри команды и между отделами. Участники изучили форматы ежедневной коммуникации, разобрали типичные ошибки при постановке задач и недопонимания между разработкой и бизнесом. Практическая часть включала разбор ситуаций и рекомендации по работе с конфликтами и обратной связью, а также адаптацию стиля общения под разные роли — от технических специалистов до заказчиков.\n\n✒ По итогам мероприятия участники отметили высокую практическую ценность материалов: многие смогли сразу соотнести услышанное со своими рабочими процессами и наметить первые шаги по улучшению текущих практик. Все желающие получили ответы на свои вопросы в формате живого диалога со спикерами.' },
+    '1795093425': { title:'Мастерство полёта', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795093425/1795093460.jpg',
+      text:'На базе колледжа прошёл квалификационный экзамен для команд проекта «Кибердром», в составе — наши студенты.',
+      full:'Пензенский колледж информационных и промышленных технологий — не только передовое учебное заведение, но и отличная площадка для проведения тематических спортивных и цифровых мероприятий!\n\n⚡ На базе учебного комплекса промышленных технологий состоялся квалификационный экзамен для участников региональных команд проекта «Кибердром». В состав участников вошли и студенты нашего колледжа из групп 23ПТ22 и 24ПТ22.\n\n🎉 Команды успешно справились с практическим заданием и уже готовятся к следующим этапам. Поздравляем и желаем удачи!' },
+    '1795089576': { title:'Здоровье — главный капитал', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795089576/1795089582.jpg',
+      text:'В рамках операции «Чистое поколение-2026» студенты встретились с медицинским психологом наркологической больницы.',
+      full:'В рамках межведомственной комплексной оперативно-профилактической операции «Чистое поколение-2026» в учебном комплексе информационных технологий Пензенского ИТ-колледжа состоялась важная встреча студентов с медицинским психологом Областной наркологической больницы.\n\n🗣 Мероприятие прошло в формате открытого диалога. Приглашённый специалист рассказал ребятам о медицинских и социальных последствиях употребления психоактивных веществ, развеяв популярные мифы о «лёгких» наркотиках и вейпах. Особое внимание было уделено тому, как формируется зависимость, почему первый шаг может стать необратимым и как работает механизм разрушения психики и организма.\n\n👍 Операция «Чистое поколение-2026» проводится в два этапа (с 6 по 15 апреля и с 16 по 25 ноября 2026 года). Её главная цель — профилактика правонарушений, предупреждение распространения наркомании среди молодёжи и формирование ценностей здорового образа жизни.' },
+    '1795088503': { title:'Профориентация в действии!', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795088503/1795088512.jpg',
+      text:'Преподаватель Пичугина О.Ю. провела профориентационную работу в МБОУ СОШ №12.',
+      full:'Преподаватель Пензенского ИТ-колледжа Пичугина О.Ю. посетила МБОУ СОШ №12 для проведения запланированной профориентационной работы.\n\n🔍 Участниками стали обучающиеся выпускных классов. Используя раздаточный материал педагог познакомила ребят со специальностями колледжа, рассказала о возможностях дальнейшего трудоустройства и плюсах системы среднего профессионального образования.\n\n💥 Подобные мероприятия помогают определиться со сложным выбором будущей специальности и создать доверительные отношения между колледжем и будущим абитуриентом!' },
+    '1795077798': { title:'В гостях у гимназии', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077798/1795077826.jpg',
+      text:'Преподаватель Ерёмина О.Б. встретилась с учащимися 9-х и 11-х классов Классической гимназии №1.',
+      full:'В рамках ежегодной профориентационной работы преподаватель Пензенского ИТ-колледжа О.Б. Ерёмина провела встречу с учащимися 9-х и 11-х классов ГБОУ ПО «Классическая гимназия №1 им. В.Г. Белинского».\n\n📋 В ходе мероприятия школьникам представили информацию о реализуемых в колледже образовательных программах, порядке приёма, возможностях трудоустройства выпускников, организации практической подготовки и внеучебной деятельности.\n\n📲 Для наглядного знакомства с колледжем была продемонстрирована презентационная и видеопродукция. Формат встречи предполагал интерактивное взаимодействие со слушателями, что позволило ответить на все интересующие ребят вопросы.' },
+    '1795077369': { title:'Повышаем квалификацию', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795077369/1795077378.jpg',
+      text:'Преподаватель Лузгина Е.В. завершила обучение по программе «КонсультантПлюс | Технология ТОП».',
+      full:'Педагоги Пензенского колледжа информационных и промышленных технологий большое внимание уделяют повышению собственной квалификации и внедрению новых практик в образовательный процесс.\n\n📝 Преподаватель Лузгина Е.В. успешно завершила обучение по программе «КонсультантПлюс | Технология ТОП», пройдя итоговый тест уровня «Профессионал». В рамках образовательных интенсивов были освоены современные методы и приёмы работы со справочно-правовой системой «КонсультантПлюс», включая эффективный поиск нормативных документов, анализ правовой информации и использование сервисных возможностей системы для решения профессиональных задач.\n\n📌 Участие в подобных онлайн-интенсивах помогает не только получить новый и актуальный опыт для дальнейшего профессионального развития, но также и почерпнуть новые идеи и вдохновение для ежедневной работы!' },
+    '1795074209': { title:'Курс на успех!', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795074209/1795074221.jpg',
+      text:'Завершены очередные курсы профессиональной подготовки; слушателям вручили свидетельства по программе сварщика.',
+      full:'Получение дополнительного образования — отличная возможность повысить собственную конкурентоспособность на рынке труда. В Пензенском колледже информационных и промышленных технологий завершены очередные курсы профессиональной подготовки!\n\n💥 В торжественной обстановке успешно справившимся с итоговыми испытаниями слушателям вручили свидетельства о профессии рабочего, должности служащего по программе профессионального обучения «Сварщик ручной дуговой сварки плавящимся покрытым электродом».\n\n🎉 Поздравляем!' },
+    '1795072776': { title:'Мы против вредных привычек', date:'19.11.2026',
+      img:'https://xn----htbcfgnhaz1b.xn--p1ai/it/news/1795072776/1795072786.jpg',
+      text:'В колледже проходят профилактические мероприятия, посвящённые борьбе с подростковым курением.',
+      full:'В Пензенском колледже информационных и промышленных технологий активно проходят профилактические мероприятия, посвящённые борьбе с подростковым курением.\n\n📝 Час о вреде курения состоялся в группе 25ПТ15. Под чутким контролем классного руководителя Хухлаевой С.Н. ребята подготовили доклады и выступили перед одногруппниками. Студенты рассказали не только о вреде никотиновой зависимости, но также о её причинах и способах справиться с пагубной привычкой.\n\n👍 Подобные мероприятия помогают ребятам не только осознать, что зависимость — это серьёзная проблема, но и выслушать убедительные аргументы в пользу отказа от курения!' }
+  };
+  function openStaticNews(id){
+    var item = staticNewsData[id];
+    if(item) openNewsView(id, item.title, item.full, item.img, item.date);
+  }
+  function renderDynamicNews(){
+    var news = getNews();
+    if(!news.length) return;
+    // На главной (news-grid) вставляем новые новости в начало
+    var grid = document.querySelector('#blog-section .news-grid');
+    if(grid){
+      news.forEach(function(item){
+        var already = grid.querySelector('[data-newsid="'+item.id+'"]');
+        if(already) return;
+        var art = document.createElement('article');
+        art.className = 'news-card';
+        art.setAttribute('data-newsid', item.id);
+        var thumb = item.img ? '<img src="' + item.img + '" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">' : '';
+        art.innerHTML =
+          '<div class="news-media" style="position:relative">' + thumb +
+          '<svg viewBox="0 0 24 24" style="position:relative;z-index:1"><path d="M12 6a6 6 0 0 1 6 6h2a8 8 0 0 0-16 0h2a6 6 0 0 1 6-6zm0 3a3 3 0 0 1 3 3h2a5 5 0 0 0-10 0h2a3 3 0 0 1 3-3z"/></svg>' +
+          '<span class="news-date">' + item.date + '</span></div>' +
+          '<div class="news-body"><h3>- ' + item.title + '</h3><p>' + item.text + '</p></div>';
+        // Клик открывает внутреннюю страницу новости
+        art.style.cursor = 'pointer';
+        art.addEventListener('click', function(){ openNewsView(item.id, item.title, item.full || item.text, item.img, item.date); });
+        grid.insertBefore(art, grid.firstChild);
+      });
+    }
+    // На странице Новостей (.news-list) вставляем в начало
+    var list = document.querySelector('#pageNews .news-list');
+    if(list){
+      news.forEach(function(item){
+        var already = list.querySelector('[data-newsid="'+item.id+'"]');
+        if(already) return;
+        var art = document.createElement('article');
+        art.className = 'news-item';
+        art.setAttribute('data-newsid', item.id);
+        var thumb = item.img ? '<span class="ni-img" style="overflow:hidden"><img src="' + item.img + '" alt="" style="width:100%;height:100%;object-fit:cover"></span>' : '<span class="ni-img"><svg viewBox="0 0 24 24"><path d="M12 6a6 6 0 0 1 6 6h2a8 8 0 0 0-16 0h2a6 6 0 0 1 6-6z"/></svg></span>';
+        art.innerHTML =
+          thumb +
+          '<div class="ni-body"><span class="ni-date">' + item.date + '</span>' +
+          '<h3>' + item.title + '</h3><p>' + item.text + '</p></div>';
+        art.style.cursor = 'pointer';
+        art.addEventListener('click', function(){ openNewsView(item.id, item.title, item.full || item.text, item.img, item.date); });
+        list.insertBefore(art, list.firstChild);
+      });
+    }
+  }
+
   // Старт
-  updateAuthUI();
+  renderDynamicNews();
 })();
 </script>
 </body>
